@@ -18,14 +18,14 @@ $router->get('/', function () use ($router) {
 });
 
 
-$router->group(['prefix' => 'api'], function () use ($router) {
+$router->group(['prefix' => 'v1'], function () use ($router) {
     $router->get('lineups',  ['uses' => 'LineupController@showAllLineups']);
   
     $router->get('lineups/{id}', ['uses' => 'LineupController@showOneLineup']);
   
     $router->post('lineups', ['uses' => 'LineupController@create']);
   
-    $router->delete('lineups/{id}', ['uses' => 'LineupController@delete']);
+    // $router->delete('lineups/{id}', ['uses' => 'LineupController@delete']);
   
-    $router->put('lineups/{id}', ['uses' => 'LineupController@update']);
+    // $router->put('lineups/{id}', ['uses' => 'LineupController@update']);
 });
