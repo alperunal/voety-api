@@ -28,25 +28,4 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     $router->delete('lineups/{id}', ['uses' => 'LineupController@delete']);
   
     $router->put('lineups/{id}', ['uses' => 'LineupController@update']);
-  });
-  
-
-$router->get('lineups', function () {
-    return 'Hello World';
-});
-
-$router->get('lineup/{id}', function ($id) {
-    //
-});
-
-$router->post('lineup', function () {
-    //
-});
-
-$router->put('lineup', function () {
-    //
-});
-
-$router->delete('lineup/{id}', function ($id) {
-    //
 });
