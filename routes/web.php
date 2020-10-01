@@ -17,6 +17,7 @@ if (app()->environment('local')) {
     header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
     header('Access-Control-Allow-Headers: Origin, Accept, Content-Type, Authorization, X-Requested-With, Application');
 }
+header('Access-Control-Allow-Origin: https://www.voety.net');
 
 $router->get('/', function () use ($router) {
     return $router->app->version();
