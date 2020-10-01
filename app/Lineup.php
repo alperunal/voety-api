@@ -13,7 +13,7 @@ class Lineup extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'date', 'main_color', 'secondary_color', 'number_color', 'players', 'user_id'
+        'name', 'date', 'main_color', 'secondary_color', 'number_color', 'players', 'user_id', 'version'
     ];
 
     /**

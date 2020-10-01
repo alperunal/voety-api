@@ -22,6 +22,7 @@ class CreateLineupsTable extends Migration
             $table->string('number_color');
             $table->text('players');
             $table->string('user_id');
+            $table->string('version');
             $table->timestamps();
         });
     }

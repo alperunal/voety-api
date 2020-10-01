@@ -28,11 +28,9 @@ class LineupController extends Controller
             'number_color' => 'required',
             'players' => 'required',
             'user_id' => 'required',
+            'version' => 'required'
         ]);
 
-        $author = Author::create($request->all());
-
-        return response()->json($author, 201);
         $lineup = Lineup::create($request->all());
 
         return response()->json($lineup, 201);
